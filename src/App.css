@@ -1,0 +1,13 @@
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .on {
+    color: #ff6b6b;
+  }
+  .off {
+    color:rgba(255,107,107,.4);
+  }
