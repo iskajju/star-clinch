@@ -17,7 +17,7 @@ const StarRating = () => {
               onMouseEnter={() => setHover(index)}
               onMouseLeave={() => setHover(rating)}
             >
-              <span className="star text-[50px] ">&#9733;</span>
+              <span className="star text-[28px] md:text-[50px] ">&#9733;</span>
             </button>
           );
         })}

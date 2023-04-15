@@ -10,10 +10,10 @@ const Profile = () => {
    <div className='mt-[76px] max-w-[1140px] m-auto px-[15px] pt-[15px]' >
     {/* Top Navigation */}
    <nav>
-    <ul className='flex items-center gap-[21px] ' >
-        <li><a className='text-[#00000084] text-sm font-semibold ' href="">Home</a> </li>
-        <li><a className='text-[#00000084] text-sm font-semibold ' href="">CELEBRITY APPEARANCE</a> </li>
-        <li className='text-[#00000084] text-sm font-semibold '>Ranbir Kapoor</li>
+    <ul className='flex items-center flex-wrap ' >
+        <li><a className='text-[#00000084] text-sm font-semibold  pr-[21px] ' href="">Home</a> </li>
+        <li><a className='text-[#00000084] text-sm font-semibold  pr-[21px] ' href="">CELEBRITY APPEARANCE</a> </li>
+        <li className='text-[#00000084] text-sm font-semibold pl-[10px] '>Ranbir Kapoor</li>
     </ul>
    </nav>
    {/* Profile Section */}
