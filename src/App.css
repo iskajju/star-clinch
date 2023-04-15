@@ -11,3 +11,35 @@ button {
   .off {
     color:rgba(255,107,107,.4);
   }
+  #footer {
+    background-image: url(https://stcdn.starclinch.in/mobile/images/profile/footer_bg.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #gallary {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-width: 25%;
+    -moz-column-width: 25%;
+    column-width: 25%;
+    padding:20px;
+    gap: 15px;
+  }
+  @media screen and (max-width: 576px) {
+    #gallary {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      -webkit-column-width: 50%;
+      -moz-column-width: 50%;
+      column-width: 50%;
+      padding:20px;
+      gap: 15px;
+    }
+    #footer {
+      background-position: bottom;
+
+    }
+  }

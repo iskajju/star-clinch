@@ -1,4 +1,5 @@
 import React from 'react'
+import ImageGallary from './ImageGallary'
 
 const Gallary = () => {
   return (
@@ -9,7 +10,8 @@ const Gallary = () => {
         <p className=' text-sm text-[#000] font-medium '>Gallery</p>
       </div>
     </div>
-      <div className='flex items-center justify-center ' >
+    <ImageGallary />
+      <div className='flex items-center justify-center mt-[50px] ' >
       <button className='text-[15px] font-bold w-full md:w-[300px] rounded-[20px] h-[42x] header-button p-[8px]'>See Price And Book </button>
       </div>
     </>

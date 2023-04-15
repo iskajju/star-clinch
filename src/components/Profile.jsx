@@ -2,6 +2,7 @@ import React from 'react'
 import ProfileSection from './ProfileSection'
 import Gallary from './Gallary'
 import Accordian from './Accordian'
+import ImageGallary from './ImageGallary'
 
 const Profile = () => {
     

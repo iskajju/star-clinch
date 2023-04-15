@@ -6,7 +6,7 @@ export default function ProfileSection({ photo }) {
         <div className='flex flex-col md:flex-row pt-[15px] pb-[15px] ' >
             {/* profile Image */}
             <div className='w-full md:w-[389px] ' >
-                <img className='h-full w-full rounded-t-[10px] mb-[56px] ' src={photo} alt="" />
+                <img className='h-full w-full rounded-[10px] mb-[56px] ' src={photo} alt="" />
             </div>
             {/* profile details */}
             <div className=' md:pl-[55px] md:pt-[62px] ' >
