@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import '../App.css'
 
 const ImageGallary = () => {
     let data = [
@@ -105,18 +106,30 @@ const ImageGallary = () => {
         },
 
     ]
+    const [model, setModel] = useState(false)
+    const [tempImgSrc, settempImgSrc] = useState('')
+    const getImg = (imgSrc) => {
+        settempImgSrc(imgSrc)
+        setModel(true)
+        console.log(imgSrc)
+    }
     return (
+        <>
+        <div className={model ? "model open" : " model" } >
+            <img src={tempImgSrc} className=' w-auto h-auto block leading-0 max-w-full box-border max-h-full mx-auto py-[20px] ' alt="" />
+        </div>
         <div id='gallary' >
             {data.map((item, index) => {
                 return (
                     <div key={index} >
-                        <img src={item.imgSrc} className='w-full mb-[15px] rounded-md ' />
+                        <img src={item.imgSrc} onClick={() => getImg(item.imgSrc)} className='w-full mb-[15px] rounded-md ' />
 
                     </div>
                 )
             })}
 
         </div>
+            </>
     )
 }
 
