@@ -20,8 +20,8 @@ const Accordian = ({ image, Title, desc, PerformanceDetails, PerformanceLanguage
     }
     return (
         <>
-            <div onClick={OpenAccordian} className={`mt-[40px] flex items-center justify-between rounded-md 
-            ${activeaccordian ? `shadow-[#fff]` : `shadow-[#9e9e9e]`}  shadow-sm p-[15px]  w-full `}>
+            <div onClick={OpenAccordian} className={`mt-[40px] flex items-center justify-between rounded-xl 
+            shadow-[#9e9e9e30]  shadow-md p-[15px]  w-full `}>
                 <div className='flex  '>
                     <img className='h-full w-[34px] mr-[15px] ' src={image} alt="" />
                     <p className=' text-[18px] text-[#000] font-medium w-full '>{Title}</p>
@@ -29,13 +29,13 @@ const Accordian = ({ image, Title, desc, PerformanceDetails, PerformanceLanguage
                 <ChevronDownIcon className='text-[#26c6da] h-5 w-5 font-bold ' />
                
             </div>
-            {activeaccordian ? <div className=' shadow-sm shadow-slate-300 rounded-b-md px-[15px]  py-[20px]' >
+            {activeaccordian ? <div className=' shadow-md shadow-[#9e9e9e40] rounded-b-xl px-[30px]  py-[20px]' >
 
                 {/* for Biography */}
                 {desc && <p className='text-sm text-[#2125529] ' >{desc}</p>}
 
                 {/* for Performace details */}
-                {PerformanceDetails && <div className='shadow-md shadow-slate-200 rounded-lg h-[90%] flex flex-wrap md:flex-nowrap items-center gap-[15px] md:gap-[30px] py-[14px] px-[15px] ' >
+                {PerformanceDetails && <div className='shadow-md shadow-[#9e9e9e40] rounded-xl h-[90%] flex flex-wrap md:flex-nowrap items-center gap-[15px] md:gap-[30px] py-[14px] px-[15px] ' >
 
 
                     {/* Off Stage Members */}
@@ -104,7 +104,7 @@ const Accordian = ({ image, Title, desc, PerformanceDetails, PerformanceLanguage
                         <h3 className=' text-[16px] md:text-[30px] text-[#000] ' >Post a review</h3>
                         <StarRating />
                        
-                        <textarea className='w-full text-[15px] md:text-[20px] text-[#191918] outline-none py-[10px] px-[15px] '  placeholder='Review' name="" id="" cols="30" rows="2"></textarea>
+                        <textarea className=' shadow-lg shadow-[#25252580] w-full text-[15px] md:text-[20px] text-[#191918] outline-none py-[10px] px-[15px] '  placeholder='Review' name="" id="" cols="30" rows="2"></textarea>
                     </div>
                     <div className='flex items-center justify-end mt-[1rem] ' >
                         <button className='bg-[#0a3fff] text-[10px] md:text-[16px]  h-[27px] w-[69px] md:h-[39px] md:w-[91.5px] text-white font-semibold rounded-[.25rem]  '> Post</button>

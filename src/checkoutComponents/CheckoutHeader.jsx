@@ -3,36 +3,43 @@ import '../App.css'
 import './header.css'
 import { ChevronDownIcon, MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import { Bars3Icon, ShoppingBagIcon } from "@heroicons/react/24/outline"
+import { Link } from 'react-router-dom';
 
 const CheckoutHeader = () => {
+    const backtoHome = () => {
+        
+    }
     return (
         <header className='fixed top-0 left-0 right-0 ' >
             <div className="container  md:max-w-[720px] lg:max-w-[1140px]">
                 <div className="inner_container flex items-center justify-between ">
 
                     <div className="brand-logo max-w-[50%]  lg:max-w-[16.666667%] px-[15px] ">
-                        <img className=' md:h-[40px] w-full' src="https://starclinch.com/static/images/home/StarClinch-Logo-new.svg" alt="no-image" />
+                        <Link to="/" >
+
+                        <img onClick={backtoHome} className=' md:h-[40px] w-full' src="https://starclinch.com/static/images/home/StarClinch-Logo-new.svg" alt="no-image" />
+                        </Link>
                     </div>
         
                     <div className=" flex-[0 0 83.333333%] hidden lg:inline-flex   ">
                         <ul className='flex items-center  text-[#070707] text-sm  '>
                             <li className='flex items-center' >
-                                <a className='ml-[40px] font-medium' href="">Entertainers </a>
+                                <a className='ml-[40px] font-medium' href="">Browse by Category </a>
                                 <ChevronDownIcon className= ' h-[12px] w-[14px] text-[#070707] ' />
                             </li>
                             <li className='flex items-center'>
-                                <a className='ml-[40px] font-medium' href="">Join Community</a>
+                                <a className='ml-[40px] font-medium' href="">For Artists</a>
                                 <ChevronDownIcon className= ' h-[12px] w-[14px] text-[#070707] ' />
                             </li>
                             <li>
-                            <button className='ml-[40px] header-button font-medium'>Post Your Requirement </button>
+                            <button className='ml-[40px] mr-[15px] header-button font-medium'>Post Your Requirement </button>
                             </li>
-                            <li>
+                            {/* <li>
                                 <MagnifyingGlassIcon className= 'ml-[40px] h-[18px] w-[18px] font-bold text-gray-600 ' />
                             </li>
                             <li>
                                 <ShoppingBagIcon className= 'ml-[40px] h-[20px] w-[20px] text-[#070707] ' />
-                            </li>
+                            </li> */}
                         
                         </ul>
                     </div>

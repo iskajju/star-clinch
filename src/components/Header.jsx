@@ -27,13 +27,13 @@ const Header = () => {
                             <li>
                             <button className='ml-[40px] header-button font-medium'>Post Your Requirement </button>
                             </li>
-                            <li>
+                            {/* <li>
                                 <MagnifyingGlassIcon className= 'ml-[40px] h-[18px] w-[18px] font-bold text-gray-600 ' />
                             </li>
                             <li>
                                 <ShoppingBagIcon className= 'ml-[40px] h-[20px] w-[20px] text-[#070707] ' />
                             </li>
-                        
+                         */}
                         </ul>
                     </div>
                     <div className="  flex-[0 0 42.333333%] lg:hidden  px-[15px] ">

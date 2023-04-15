@@ -118,7 +118,7 @@ const ImageGallary = () => {
         <div className={model ? "model open" : " model" } >
             <img src={tempImgSrc} className=' w-auto h-auto block leading-0 max-w-full box-border max-h-full mx-auto py-[20px] ' alt="" />
         </div>
-        <div id='gallary' >
+        <div id='gallary' className=' shadow-md shadow-[#9e9e9e60] rounded-xl ' >
             {data.map((item, index) => {
                 return (
                     <div key={index} >
