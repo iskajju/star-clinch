@@ -38,11 +38,12 @@ const Bottom = () => {
 
 
                     <div className='px-[15px] mb-[50px] text-center md:text-left  md:w-[33.3%] ' >
-                        <h3 className='text-[#939393] font-medium text-sm md:text-[12px] mb-[15px] leading-[25px] ' >LEGAL ENTITY:</h3>
-                        <p className='text-[#5f5e5e] text-[16px] w-[75%] ' >VINSM Globe Private Limited
-                            GSTIN : 07AAFCK1574R1ZX
-                            CIN: U52605DL2012PTC236944
-                            Phone: +91 7042 88 4270
+                        <h3 className='text-[#939393] font-medium text-sm md:text-[12px] mb-[15px] leading-[25px]  ' >LEGAL ENTITY:</h3>
+                        <p className='text-[#5f5e5e] text-[16px]  m-auto ' >VINSM Globe Private Limited
+                            GSTIN : 07AAFCK1574R1ZX 
+                            <br/>
+                            CIN: U52605DL2012PTC236944 <br/>
+                            Phone: +91 7042 88 4270 <br/>
 <br />
 <br />
                             Contact Us</p>
