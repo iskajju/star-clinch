@@ -6,9 +6,7 @@ import { Bars3Icon, ShoppingBagIcon } from "@heroicons/react/24/outline"
 import { Link } from 'react-router-dom';
 
 const CheckoutHeader = () => {
-    const backtoHome = () => {
-        
-    }
+   
     return (
         <header className='fixed top-0 left-0 right-0 ' >
             <div className="container  md:max-w-[720px] lg:max-w-[1140px]">
@@ -16,8 +14,7 @@ const CheckoutHeader = () => {
 
                     <div className="brand-logo max-w-[50%]  lg:max-w-[16.666667%] px-[15px] ">
                         <Link to="/" >
-
-                        <img onClick={backtoHome} className=' md:h-[40px] w-full' src="https://starclinch.com/static/images/home/StarClinch-Logo-new.svg" alt="no-image" />
+                        <img className=' md:h-[40px] w-full' src="https://starclinch.com/static/images/home/StarClinch-Logo-new.svg" alt="no-image" />
                         </Link>
                     </div>
         

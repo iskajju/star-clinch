@@ -17,13 +17,13 @@ export default function ProfileSection({ photo }) {
                     <h4 className='text-[14px] text-[#6c757d] font-bold  leading-[17px] '>Mumbai, Maharashtra</h4>
                 </div>
                 <div>
-<Link to="/cart/checkout" >
-                <button className='w-full text-[16px] font-bold md:w-[300px] rounded-[20px] h-[42x] mt-[25px] mb-[20px] header-button p-[7px]'>See Price And Book </button>
-</Link>
+                    <Link to="/cart/checkout" >
+                        <button className='w-full text-[16px] font-bold md:w-[300px] rounded-[20px] h-[42x] mt-[25px] mb-[20px] header-button p-[7px]'>See Price And Book </button>
+                    </Link>
 
-                <p className='text-[16px] text-[#212529] ' >The 'ROCKSTAR' who is a heart throb of millions, Ranbir Kapoor is one of the finest
-                <br /> actors in Bollywood and is a true versatile performer</p>
-                
+                    <p className='text-[16px] text-[#212529] ' >The 'ROCKSTAR' who is a heart throb of millions, Ranbir Kapoor is one of the finest
+                        <br /> actors in Bollywood and is a true versatile performer</p>
+
                 </div>
             </div>
 
