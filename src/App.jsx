@@ -12,12 +12,12 @@ function App() {
 
   return (
     <>
-      
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart/checkout" element={<Checkout />} />
         </Routes>
-    
+      </BrowserRouter>
     </>
   )
 }
