@@ -39,7 +39,7 @@ const Header = () => {
                     <div className="  flex-[0 0 42.333333%] lg:hidden  px-[15px] ">
                         <ul className='flex items-center  text-[#070707] text-sm  '>
                         <li>
-                                <Bars3Icon className= 'ml-[40px] h-[20px] w-[20px] text-[#070707] ' />
+                                <Bars3Icon className= 'ml-[40px] h-[30px] w-[30px] text-[#070707] ' />
                             </li>
                         
                         </ul>

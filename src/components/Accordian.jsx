@@ -29,7 +29,7 @@ const Accordian = ({ image, Title, desc, PerformanceDetails, PerformanceLanguage
                 <ChevronDownIcon className='text-[#26c6da] h-5 w-5 font-bold ' />
                
             </div>
-            {activeaccordian ? <div className=' shadow-md shadow-[#9e9e9e40] rounded-b-xl px-[30px]  py-[20px]' >
+            {activeaccordian ? <div className=' shadow-md shadow-[#9e9e9e40] rounded-b-xl px-[15px] md:px-[30px]  py-[20px]' >
 
                 {/* for Biography */}
                 {desc && <p className='text-sm text-[#2125529] ' >{desc}</p>}
@@ -39,7 +39,7 @@ const Accordian = ({ image, Title, desc, PerformanceDetails, PerformanceLanguage
 
 
                     {/* Off Stage Members */}
-                    <div className=' bg-[#e3f8fa]  rounded-lg flex flex-col items-center h-full w-[45%]  md:w-full py-[10px] px-[5px] mb-[17px]  '>
+                    <div className=' bg-[#e3f8fa]  rounded-lg flex flex-col items-center h-full w-[47%]  md:w-full py-[10px] px-[5px] mb-[17px]  '>
                         <div className='pb-[15px]' >
                             <img src="https://stcdn.starclinch.in/mobile/images/profile/offstage_members_new.svg" alt="" />
                         </div>
@@ -50,7 +50,7 @@ const Accordian = ({ image, Title, desc, PerformanceDetails, PerformanceLanguage
                     </div>
 
                     {/* Performing Members */}
-                    <div className=' bg-[#ffe6e2] rounded-lg flex flex-col items-center h-full w-[45%] md:w-full py-[10px] px-[5px] mb-[17px] '>
+                    <div className=' bg-[#ffe6e2] rounded-lg flex flex-col items-center h-full w-[47%] md:w-full py-[10px] px-[5px] mb-[17px] '>
                         <div className='pb-[15px]' >
                             <img src="https://stcdn.starclinch.in/mobile/images/profile/performing_members_new.svg" alt="" />
                         </div>
@@ -60,7 +60,7 @@ const Accordian = ({ image, Title, desc, PerformanceDetails, PerformanceLanguage
                         </div>
                     </div> 
                       {/* Performance duration */}
-                    <div className=' bg-[#f5e6fe] rounded-lg flex flex-col items-center h-full w-[45%] md:w-full py-[10px] px-[5px] mb-[17px] '>
+                    <div className=' bg-[#f5e6fe] rounded-lg flex flex-col items-center h-full w-[47%] md:w-full py-[10px] px-[5px] mb-[17px] '>
                         <div className='pb-[15px]' >
                             <img src="https://stcdn.starclinch.in/mobile/images/profile/performance_min_duration_new.svg" alt="" />
                         </div>
@@ -70,7 +70,7 @@ const Accordian = ({ image, Title, desc, PerformanceDetails, PerformanceLanguage
                         </div>
                     </div>   
                     {/* Can Travel */}
-                    <div className=' bg-[#fff1c0] rounded-lg flex flex-col items-center h-[151px] md:h-full w-[45%] md:w-full py-[10px]  px-[5px] mb-[17px] '>
+                    <div className=' bg-[#fff1c0] rounded-lg flex flex-col items-center h-[151px] md:h-full w-[47%] md:w-full py-[10px]  px-[5px] mb-[17px] '>
                         <div className='pb-[15px]' >
                             <img src="https://stcdn.starclinch.in/mobile/images/profile/can_travel_new.svg" alt="" />
                         </div>

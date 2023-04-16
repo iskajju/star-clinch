@@ -3,6 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { Link } from '@mui/material';
 
 const Bottom = () => {
     return (
@@ -15,9 +16,11 @@ const Bottom = () => {
                         <p className='text-sm text-center ' >India's Largest Marketplace for Professional Artists</p>
                     </div>
                     <div className='flex items-center justify-center  mb-[15px] px-[15px] md:w-[33.3%]  ' >
+                        <Link to='/'>
                         <img className='h-[45px]' src="https://starclinch.com/static/images/home/StarClinch-Logo-white.svg" alt="" />
+                        </Link>
                     </div>
-                    <div className='flex md:flex-col lg:flex-row items-center sm:justify-center  w-full mb-[15px]  px-[15px] md:w-[33.3%] ' >
+                    <div className='flex md:flex-col lg:flex-row items-center justify-center  w-full mb-[15px]  px-[15px] md:w-[33.3%] ' >
                         <p className='text-sm md:text-[12px] text-center '>On social networks</p>
                         <div className='flex items-center  gap-[20px] md:gap-[10px]  ml-[20px]  ' >
                             <FacebookIcon className=' h-[18px] text-[#6f6f6f] ' />
@@ -34,7 +37,7 @@ const Bottom = () => {
 
                 {/*  */}
                 <div className=' flex flex-col md:flex-row w-full bg-[#1c1c1c]  ' >
-                <div className=' flex flex-col md:flex-row  md:max-w-[720px] lg:max-w-[1140px] m-auto  pt-[60px] border-[#363636] border-b   ' >
+                <div className=' flex flex-col md:flex-row  md:max-w-[720px] lg:max-w-[1140px] m-auto  pt-[60px] border-[#363636] border-b w-full' >
 
 
                     <div className='px-[15px] mb-[50px] text-center md:text-left  md:w-[33.3%] ' >

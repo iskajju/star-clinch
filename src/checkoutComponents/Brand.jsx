@@ -4,7 +4,7 @@ import React from 'react'
 const Brand = () => {
     return (
         <div className='flex flex-col md:flex-row justify-between px-[15px] mb-[50px] ' >
-            <div className=' lg:max-w-[41.666667%]' >
+            <div className=' lg:max-w-[38.666667%]' >
                 <h3 className='text-[28px] text-[#333] font-medium mb-[14px] ' >Why StarClinch</h3>
                 <div className='flex mb-[12px] '>
                     <div>
@@ -57,8 +57,8 @@ const Brand = () => {
 
             <div className='mt-[30px] lg:mt-[0px] lg:max-w-[50%] ' >
                 <h3 className='text-[28px] text-[#333] font-medium ' >Brands we've worked with</h3>
-                <div id='fluid' className='h-[500px] overflow-hidden' >
-                    <img src="https://stcdn.starclinch.in/images/home/our_brand_logos_new.svg" alt="" />
+                <div id='fluid' className=' w-full h-[500px]  overflow-hidden' >
+                    <img className='slider' src="https://stcdn.starclinch.in/images/home/our_brand_logos_new.svg" alt="" />
 
                 </div>
             </div>

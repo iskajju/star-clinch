@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import '../App.css'
-// import {  Switch } from '@mui/material'
-import Switch from 'react-ios-switch';
 
 export const Form = () => {
     const [count, setCount] = useState(0)
@@ -24,8 +22,8 @@ export const Form = () => {
                 <div className='flex flex-col w-full lg:w-[66.666667%] ' >
                     {/* artist  */}
                     <div className='flex items-center justify-center mx-[20px] my-[20px] lg:mx-[215px] lg:my-[20px] leading-[1.2] ' >
-                        <div className='  rounded-full overflow-hidden   ' >
-                            <img className=' object-cover  h-[100px] w-[100px]   overflow-hidden ' src="https://wpcdn.starclinch.in/2019/03/26642.jpg?format=webp&w=300&dpr=1.3" alt="" />
+                        <div className='  rounded-full overflow-hidden  ' >
+                            <img className=' object-cover  h-[100px] w-[110px] md:w-[100px] lg:w-[110px]  overflow-hidden ' src="https://wpcdn.starclinch.in/2019/03/26642.jpg?format=webp&w=300&dpr=1.3" alt="" />
                         </div>
                         <h3 className='ml-[15px] text-[29px] font-medium text-[#333] ' >
                             Ranbir Kapoor
@@ -147,11 +145,11 @@ export const Form = () => {
                                 </div>
                                 {/* 6 Row */}
                                 {/* 7Row */}
-                                <div className=' flex items-center ' >
-                                    <div className=' px-[15px] pb-[20px] w-[16.66666%]' >
+                                <div className=' flex items-center justify-end ' >
+                                    <div className=' px-[15px] pb-[20px] md:w-[16.66666%]' >
                                         <label className='flex flex-col text-[#212529] text-[20px] font-medium ' htmlFor="name">
 
-                                            <select className='mt-[10px] text-[16px] text-[#495057] rounded-sm border-2 border-black py-[6px] px-[12px] ' required="">
+                                            <select className='mt-[10px] text-[16px] text-[#495057] rounded-md border py-[6px] px-[12px] ' required="">
                                                 <option className='text-[16px] ' value="Yes" selected="" hidden="">Yes</option>
                                                 <option value="Yes">Yes</option>
                                                 <option value="No">Don't</option>

@@ -12,13 +12,13 @@ const Gallary = () => {
         </div>
       </div>
       <ImageGallary />
+        <Link to="/cart/checkout" >
       <div className='flex items-center justify-center mt-[50px] ' >
 
-        <Link to="/cart/checkout" >
           <button className='text-[15px] font-bold w-full md:w-[300px] rounded-[20px] h-[42x] header-button p-[8px]'>See Price And Book </button>
 
-        </Link>
       </div>
+        </Link>
     </>
   )
 }
