@@ -88,7 +88,7 @@ const Bottom = () => {
                     
 </div>
                 </div>
-                    <div className='bg-[#1c1c1c] w-full pt-[30px]' >
+                    <div className='flex items-center justify-center bg-[#1c1c1c] w-full pt-[30px]' >
                     <p className='text-center w-[80%] md:w-full text-[#5f5e5e] font-medium text-sm mb-[5px] leading-[25px] '>© Copyright 2015- 2023 | VINSM Globe Pvt. Ltd. | All Rights Reserved.</p>
                     </div>
                 {/*  */}
