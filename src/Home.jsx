@@ -14,6 +14,7 @@ const Home = () => {
 
     <Profile />
     
+    
     <SimilarArtist />
     <Interested />
     <Tags />

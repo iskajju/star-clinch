@@ -3,8 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Link } from '@mui/material';
-
+import{ Link }from 'react-router-dom';
 const Bottom = () => {
     return (
         <footer className='bg-[#1c1c1c] pt-[35px] pb-[67px] rounded-t-[35px] text-[#6f6f6f] ' >

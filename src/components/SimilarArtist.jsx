@@ -12,32 +12,36 @@ function SimilarArtist() {
           <p className=' text-[20px] text-[#000] font-medium '>Similar Artists you may like</p>
         </div>
       </div>
+
+
+
       <div
         className="flex transition-all duration-700"
         style={{
           transform: `translateX(${value}%)`,
         }}
       >
-        <div className="flex justify-around min-w-full lg:min-w-[50%]">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pr-0">
           <ArtistProfile
             photo="https://prod-platform-data.s3.ap-south-1.amazonaws.com/s3data/starclinchwpimages/starclinch1/wp-content/uploads/2019/07/godse.jpg"
             imageAlt=""
             name="Mugdha Godse"
             city="Mumbai"
-          />
+            />
           <ArtistProfile photo="https://prod-platform-data.s3.ap-south-1.amazonaws.com/s3data/starclinchwpimages/starclinch1/wp-content/uploads/2019/02/a11fed94-8b07-412d-879e-f944d29c19a3.jpg" name="Aadil Chahal" city='Mumbai' />
         </div>
 
-        <div className="flex justify-around min-w-full lg:min-w-[50%]">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pl-0 ">
           <ArtistProfile photo="https://prod-platform-data.s3.ap-south-1.amazonaws.com/s3data/starclinchwpimages/starclinch1/wp-content/uploads/2019/02/aafreen-vaz-profile.jpg" name="Aafreen Vaz" city='Mumbai' />
           <ArtistProfile photo="https://prod-platform-data.s3.ap-south-1.amazonaws.com/s3data/starclinchwpimages/starclinch1/wp-content/uploads/2019/02/aartii-nagpal-profile.jpg" name="Aartii Nagpal" city='Mumbai' />
         </div>
 
-        <div className="flex justify-around min-w-full lg:min-w-[50%]">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pl-0 ">
           <ArtistProfile photo="https://prod-platform-data.s3.ap-south-1.amazonaws.com/s3data/starclinchwpimages/starclinch1/wp-content/uploads/2019/02/aashi-sharma-profile.jpg" name="Aashi Sharma" city='Mumbai' />
           <ArtistProfile photo="https://prod-platform-data.s3.ap-south-1.amazonaws.com/s3data/starclinchwpimages/starclinch1/wp-content/uploads/2019/07/Aatish-Bhattacharya2-750x450.jpg" name="Aatish Bhattacharya" city='Mumbai' />
         </div>
       </div>
+
       <div className="hidden lg:flex justify-center mt-[16px] items-center gap-1">
         <button
           className={`w-[10px] h-[10px] ${check == 1 ? "bg-black" : "bg-[#ccc]"

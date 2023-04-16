@@ -4,6 +4,8 @@ import './header.css'
 import { ChevronDownIcon, MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import { Bars3Icon, ShoppingBagIcon } from "@heroicons/react/24/outline"
 
+import{ Link }from 'react-router-dom';
+
 const Header = () => {
     return (
         <header className='fixed top-0 left-0 right-0 ' >
@@ -11,7 +13,9 @@ const Header = () => {
                 <div className="inner_container flex items-center justify-between ">
 
                     <div className="brand-logo max-w-[50%]  lg:max-w-[16.666667%] px-[15px] ">
+                        <Link to="/">
                         <img className=' md:h-[40px] w-full' src="https://starclinch.com/static/images/home/StarClinch-Logo-new.svg" alt="no-image" />
+                        </Link>
                     </div>
         
                     <div className=" flex-[0 0 83.333333%] hidden lg:inline-flex   ">

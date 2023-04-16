@@ -16,7 +16,7 @@ const Interested = () => {
           transform: `translateX(${value}%)`,
         }}
       >
-        <div className="flex justify-around min-w-full lg:min-w-[50%]">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pr-0 ">
           <InetrestedArtist
           image="https://starclinch.com/static/mobile/images/profile/book-anchor-online.webp"
           />
@@ -26,7 +26,7 @@ const Interested = () => {
         
          
         </div>
-        <div className="flex justify-around min-w-full lg:min-w-[50%]">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pr-0 ">
         <InetrestedArtist
           image="https://starclinch.com/static/mobile/images/profile/book-comedian-online.webp"
           />
@@ -34,7 +34,7 @@ const Interested = () => {
           image="https://starclinch.com/static/mobile/images/profile/book-dancer-online.webp"
           />
         </div>
-        <div className="flex justify-around min-w-full lg:min-w-[50%]">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pr-0 ">
         <InetrestedArtist
           image="https://starclinch.com/static/mobile/images/profile/book-dj-online.webp"
           />
@@ -42,7 +42,7 @@ const Interested = () => {
           image="https://starclinch.com/static/mobile/images/profile/book-instrumentalist-online.webp"
           />
         </div>
-        <div className="flex justify-around min-w-full lg:min-w-[50%]">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pr-0 ">
         <InetrestedArtist
           image="https://starclinch.com/static/mobile/images/profile/book-band-online.webp"
           />
@@ -50,7 +50,7 @@ const Interested = () => {
           image="https://starclinch.com/static/mobile/images/profile/book-magician-online.webp"
           />
         </div>
-        <div className="flex justify-around min-w-full lg:min-w-[50%]">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pr-0 ">
         <InetrestedArtist
           image="https://starclinch.com/static/mobile/images/profile/book-makeup-artist-online.webp"
           />
@@ -58,7 +58,7 @@ const Interested = () => {
           image="https://starclinch.com/static/mobile/images/profile/book-model-online.webp"
           />
         </div>
-        <div className="flex justify-around min-w-full lg:min-w-[50%]">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pr-0 ">
         <InetrestedArtist
           image="https://starclinch.com/static/mobile/images/profile/book-photographer-online.webp"
           />
@@ -66,7 +66,7 @@ const Interested = () => {
           image="https://starclinch.com/static/mobile/images/profile/book-singer-online.webp"
           />
         </div>
-        <div className="flex justify-around min-w-full lg:min-w-[50%]">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pr-0 ">
         <InetrestedArtist
           image="https://starclinch.com/static/mobile/images/profile/book-speaker-online.webp"
           />
@@ -78,7 +78,7 @@ const Interested = () => {
       <div className="hidden lg:flex justify-center mt-[16px] items-center gap-1">
         <button
           className={`w-[10px] h-[10px] ${
-            check == 1 ? "bg-black" : "bg-[#ccc]"
+            check == 1 ? "bg-black" : "bg-[#ccc]" 
           } rounded-full`}
           onClick={() => {
             setValue(0);
