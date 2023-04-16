@@ -170,7 +170,7 @@ export const Form = () => {
                     </div>
                     {/* form */}
                 </div>
-                <div className='w-full lg:w-[33.333333%] p-[25px] ' >
+                <div className='w-full lg:w-[33.333333%] p-[25px] mb-[20px] ' >
                     <div className='flex items-end mb-[10px] pl-[30px] '>
                         <div onClick={toggle} className={`bg-[#ccc] mr-[10px] rounded-full px-[6px] py-[6px] w-[60px] h-[25px] flex items-center ${active ? " bg-green-400 " : null} `} >
                             <div className={`bg-white h-[18px] w-[40%] rounded-full transition-all duration-500 ${active ? "translate-x-[150%]" : "translate-x-0"} `}></div>

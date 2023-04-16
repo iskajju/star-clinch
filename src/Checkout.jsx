@@ -2,6 +2,7 @@ import React from 'react'
 import CheckoutHeader from './checkoutComponents/CheckoutHeader'
 import { Form } from './checkoutComponents/Form'
 import Brand from './checkoutComponents/Brand'
+import Bottom from './checkoutComponents/Bottom'
 
 const Checkout = () => {
   return (
@@ -11,6 +12,7 @@ const Checkout = () => {
       <Form />
       <Brand />
     </div>
+    <Bottom />
     
     </>
   )
