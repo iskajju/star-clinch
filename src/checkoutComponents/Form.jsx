@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../App.css'
+// import {  Switch } from '@mui/material'
+import Switch from 'react-ios-switch';
 
 export const Form = () => {
+    const [count, setCount] = useState(0)
+    const [active, setActive] = useState(false)
+    const toggle = () => {
+        setCount(count + 1)
+        if(count % 2 === 0){
+            setActive(true)
+            
+        } else {
+            
+            setActive(false)
+        }
+    }
+
+
     return (
         <>
-            <div className='flex flex-col lg:flex-row items-center mt-[76px] pt-[20px] md:pt-[60px] px-[15px] ' >
+            <div className='flex flex-col lg:flex-row  mt-[76px] pt-[20px] md:pt-[60px] px-[15px] ' >
                 <div className='flex flex-col w-full lg:w-[66.666667%] ' >
                     {/* artist  */}
                     <div className='flex items-center justify-center mx-[20px] my-[20px] lg:mx-[215px] lg:my-[20px] leading-[1.2] ' >
@@ -26,7 +42,7 @@ export const Form = () => {
                     </div>
                     {/* form title */}
                     {/* form */}
-                    <div className='pt-[20px]' >
+                    <div className='lg:pt-[20px] lg:px-[50px] ' >
                         <form action="">
 
                             <div  >
@@ -120,39 +136,52 @@ export const Form = () => {
                                 </div>
 
                                 {/* Fifth Row */}
-                                 {/* 6  Row */}
-                                 <div className=' flex ' >
+                                {/* 6  Row */}
+                                <div className=' flex ' >
                                     <div className=' px-[15px] pb-[20px] w-full' >
                                         <label className='flex flex-col text-[#212529] text-[20px] font-medium' htmlFor="name">
-                                        Tell us more (we love to listen)
+                                            Tell us more (we love to listen)
                                             <textarea id='name' cols="30" type="text" className='mt-[10px] text-[16px] text-[#495057] rounded-md border py-[6px] pl-[12px] pr-[28px]' />
                                         </label>
                                     </div>
                                 </div>
                                 {/* 6 Row */}
-                                 {/* 7Row */}
-                                 <div className=' flex ' >
-                                    <div className=' px-[15px] pb-[20px] w-full' >
-                                        <label className='flex flex-col text-[#212529] text-[20px] font-medium' htmlFor="name">
-            
-                                        <select  required=""> 
-												<option value="Yes" selected="" hidden="">Yes</option>  
-												<option value="Yes">Yes</option>
-												<option value="No">Don't</option>
-											</select>
+                                {/* 7Row */}
+                                <div className=' flex items-center ' >
+                                    <div className=' px-[15px] pb-[20px] w-[16.66666%]' >
+                                        <label className='flex flex-col text-[#212529] text-[20px] font-medium ' htmlFor="name">
+
+                                            <select className='mt-[10px] text-[16px] text-[#495057] rounded-sm border-2 border-black py-[6px] px-[12px] ' required="">
+                                                <option className='text-[16px] ' value="Yes" selected="" hidden="">Yes</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">Don't</option>
+                                            </select>
                                         </label>
                                     </div>
+                                    <div className=' px-[15px] w-[83.333333%] pb-[20px] ' >
+                                        <h6 className=' text-[16px] text-[#333] font-medium ' >Send more options in my budget</h6>
+
+                                    </div>
                                 </div>
+                                <hr className=' my-[30px] mx-[-25px] ' />
                                 {/*7 Row */}
                             </div>
                         </form>
                     </div>
                     {/* form */}
-
-
                 </div>
-                <div className='w-[33.333333%]' >
-
+                <div className='w-full lg:w-[33.333333%] p-[25px] ' >
+                    <div className='flex items-end mb-[10px] pl-[30px] '>
+                        <div onClick={toggle} className={`bg-[#ccc] mr-[10px] rounded-full px-[6px] py-[6px] w-[60px] h-[25px] flex items-center ${active ? " bg-green-400 " : null} `} >
+                            <div className={`bg-white h-[18px] w-[40%] rounded-full transition-all duration-500 ${active ? "translate-x-[150%]" : "translate-x-0"} `}></div>
+                        </div>
+                        <div>
+                            <p className='text-sm' >Send Quotes on Whatsapp</p>
+                        </div>
+                    </div>
+                    <div className='flex w-full ' >
+                        <button className='text-[15px] lg:text-[20px] leading-[20px] text-white font-bold w-full rounded-[10px]  bg-[#ff214f] p-[15px] hover:bg-[#0054a6] hover:border-[#0054a6]  '>Show Best Price </button>
+                    </div>
                 </div>
 
             </div>
