@@ -21,7 +21,7 @@ function SimilarArtist() {
           transform: `translateX(${value}%)`,
         }}
       >
-        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] md:pr-0">
+        <div className="flex justify-around min-w-full lg:min-w-[50%] px-[15px] ">
           <ArtistProfile
             photo="https://prod-platform-data.s3.ap-south-1.amazonaws.com/s3data/starclinchwpimages/starclinch1/wp-content/uploads/2019/07/godse.jpg"
             imageAlt=""
